@@ -1,0 +1,16 @@
+{
+  "id": "jetbrains-space",
+  "name": "JetBrains Space",
+  "version": "1.0.0",
+  "description": "jetbrains-space",
+  "main": "index.js",
+  "author": "Matthias Koch <ithrowexceptions@gmail.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://{teamId}",
+    "hasNotificationSound": true,
+    "hasDirectMessages": true,
+    "hasIndirectMessages": true,
+    "hasTeamId": true
+  }
+}
