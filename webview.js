@@ -5,9 +5,12 @@ var _path = _interopRequireDefault(require("path"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
-    // TODO: Insert your notification-finding code here
-    Ferdi.setBadge(0, 0);
+  const getMessages = () => {
+    const chats = document.querySelector('#app [title="Chats"] > div');
+    const directMessages = chats.textContent;
+    const allMessages = chats.children.length;
+
+    Ferdi.setBadge(directMessages, allMessages);
   };
 
   Ferdi.loop(getMessages);
